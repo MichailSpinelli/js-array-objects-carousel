@@ -6,4 +6,51 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color: white;
 }
+
+.slider-container{
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.contenitore-img{
+  width: 100%;
+}
+
+
+.contenitore-img > img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bottone-nav-sx{
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 220px;
+    left: 380px;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.5;
+  }
+
+  .bottone-nav-dx{
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 220px;
+    right: 380px;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.5;
+  }
