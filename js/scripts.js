@@ -1,12 +1,3 @@
-/*
-
-Milestone 1:
-Ora rimuoviamo i contenuti statici e usiamo l'array di oggetti letterali per popolare dinamicamente il carosello.
-Al click dell'utente sulle frecce verso sinistra o destra, l'immagine attiva diventerà visibile e dovremo aggiungervi titolo e testo.
-Milestone 2:
-Aggiungere il ciclo infinito del carosello. Ovvero se la slide attiva è la prima e l'utente clicca la freccia verso destra, la slide che deve attivarsi sarà l'ultima e viceversa per l'ultima slide se l'utente clicca la freccia verso sinistra.
-Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
-*/
 
 const img = [
     {
@@ -59,11 +50,12 @@ for (let i = 0; i < img.length; i++) {
     const imgContainer = document.querySelector('.contenitore-img > img');
     const rightButton = document.querySelector('.bottone-nav-dx');
     const leftButton = document.querySelector('.bottone-nav-sx');
+    const descriptionElement = document.querySelector('.descrizione-img');
 
     function updateImage() {
         imgContainer.src = img[immagineCorrente].url;
         imgContainer.alt = img[immagineCorrente].title;
-        imgContainer.description = img[immagineCorrente].description;
+        descriptionElement.textContent = img[immagineCorrente].description;
     }
     
     rightButton.addEventListener('click', function () {

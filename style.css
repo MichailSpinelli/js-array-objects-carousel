@@ -54,3 +54,15 @@
     padding: 10px;
     opacity: 0.5;
   }
+
+  .descrizione-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1; 
+}
